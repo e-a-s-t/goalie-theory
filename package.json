@@ -1,0 +1,15 @@
+{
+  "name": "marp-presentations",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "marp -s decks --port 8000 --allow-local-files",
+    "watch": "marp -w 'decks/*.md' --allow-local-files",
+    "html": "marp 'decks/*.md' --allow-local-files --output dist",
+    "pdf": "marp 'decks/*.md' --allow-local-files --pdf --output dist",
+    "pptx": "marp 'decks/*.md' --allow-local-files --pptx --output dist"
+  },
+  "devDependencies": {
+    "@marp-team/marp-cli": "^4.4.0"
+  }
+}

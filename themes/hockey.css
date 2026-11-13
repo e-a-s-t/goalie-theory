@@ -1,0 +1,200 @@
+/* @theme hockey */
+@import 'default';
+
+:root {
+  --bg: #0c1728;
+  --surface: #15243a;
+
+  --text: #f4f7fc;
+  --muted: #a9bdd4;
+  --ice: #79d6ff;
+  --accent: #ffd166;
+
+  --primary-threat: #ff5252;
+  --secondary-threat: #ffb347;
+  --safe: #61d095;
+}
+
+section {
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 64px;
+  font-size: 30px;
+}
+
+/* Typography */
+
+h1,
+h2,
+h3 {
+  color: var(--ice);
+}
+
+h1 {
+  font-size: 2.1em;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 1.45em;
+}
+
+strong {
+  color: var(--accent);
+}
+
+section::after {
+  color: var(--muted);
+}
+
+/* Title slide */
+
+section.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section.title h1 {
+  font-size: 3.2em;
+  margin-bottom: 0.15em;
+}
+
+section.title h2 {
+  color: var(--text);
+  font-weight: normal;
+}
+
+/* Main concepts */
+
+.flow {
+  margin-top: 2em;
+  text-align: center;
+  font-size: 1.35em;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+}
+
+.big-question {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60%;
+  text-align: center;
+}
+
+.big-question h2 {
+  font-size: 2.2em;
+}
+
+/* Threats */
+
+.primary-threat {
+  color: var(--primary-threat);
+  font-weight: bold;
+}
+
+.secondary-threat {
+  color: var(--secondary-threat);
+  font-weight: bold;
+}
+
+.threat-change {
+  margin-top: 1.5em;
+  text-align: center;
+  font-size: 1.4em;
+  line-height: 1.7;
+}
+
+/* Scanning */
+
+.scan {
+  margin: 1.5em auto;
+  padding: 0.8em 1.2em;
+
+  background: var(--surface);
+  border-left: 6px solid var(--ice);
+
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+/* Two-column content */
+
+.two-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  margin-top: 1.5em;
+}
+
+/* Question / discussion slides */
+
+section.question {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+section.question h1 {
+  font-size: 2.5em;
+}
+
+section.situation {
+  text-align: center;
+  padding: 40px 64px;
+}
+
+section.situation h1 {
+  margin: 0 0 20px;
+  text-align: left;
+}
+
+section.situation img {
+  display: block;
+  margin: 0 auto;
+  max-height: 580px;
+}
+
+section.answer {
+  padding: 36px 48px;
+}
+
+section.answer h1 {
+  margin: 0 0 24px;
+  text-align: left;
+}
+
+.answer-images {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+.answer-images img {
+  width: calc(50% - 12px);
+  height: 570px;
+  object-fit: contain;
+}
+
+/* Quotes / principles */
+
+blockquote {
+  margin: 1.5em 0;
+  padding: 0.8em 1.2em;
+
+  background: var(--surface);
+  border-left: 6px solid var(--accent);
+
+  font-size: 1.15em;
+}
+
+/* Secondary text */
+
+.muted {
+  color: var(--muted);
+}
