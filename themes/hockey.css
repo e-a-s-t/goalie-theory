@@ -183,6 +183,23 @@ section.answer h1 {
 
 /* Quotes / principles */
 
+/* Quotes / principles */
+
+section blockquote {
+  margin: 1.5em 0;
+  padding: 0.8em 1.2em;
+
+  background: var(--surface);
+  border-left: 6px solid var(--accent);
+
+  color: var(--text);
+  font-size: 1.15em;
+}
+
+section blockquote p {
+  color: inherit;
+}
+
 blockquote {
   margin: 1.5em 0;
   padding: 0.8em 1.2em;
